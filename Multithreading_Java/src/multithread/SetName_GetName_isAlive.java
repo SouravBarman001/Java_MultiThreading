@@ -31,10 +31,10 @@ public class SetName_GetName_isAlive extends Thread{
 		 
 		SetName_GetName_isAlive thread = new SetName_GetName_isAlive();
 		
-		System.out.println("isAlive: "+Thread.currentThread().isAlive());
+		System.out.println("isAlive: "+Thread.currentThread().isAlive()); // It returns boolean value
 		
 		thread.start();
-		System.out.println("Child Thread isAlive: "+Thread.currentThread().isAlive());
+		
 		
 		
 		
