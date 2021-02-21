@@ -19,13 +19,13 @@ public class SetName_GetName_isAlive extends Thread{
 		
 		String thread_name = thread_1.getName();
 		
-		System.out.println("Thread Name is : "+thread_name); // Which is main thread
+	//	System.out.println("Thread Name is : "+thread_name); // Which is main thread
 		
 		// Now change the name of the main thread
 		
-		thread_1.setName("MyMainThread");
+		Thread.currentThread().setName("MyMainThread");
 		
-		System.out.println("Thread Name is : "+thread_1.getName()); // MyMainThread
+		System.out.println("Change thread Name is : "+thread_1.getName()); // MyMainThread
 		
 		
 		 
